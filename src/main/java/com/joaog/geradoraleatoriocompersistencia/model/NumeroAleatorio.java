@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity(name = "random_number")
+@Entity(name = "random_numbers")
 public class NumeroAleatorio implements Serializable {
 
     private static final long serialVersionUID = 1L;
