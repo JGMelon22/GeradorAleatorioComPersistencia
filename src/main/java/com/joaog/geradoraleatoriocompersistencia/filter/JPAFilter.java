@@ -25,7 +25,7 @@ public class JPAFilter implements Filter {
         try {
             logger.info("Inicializando JPAFilter...");
 
-            emf = Persistence.createEntityManagerFactory("RandomNumberPU");
+            emf = Persistence.createEntityManagerFactory("NumeroAleatorioPU");
             logger.info("EntityManagerFactory inicializado com sucesso");
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Erro ao inicializar EntityManagerFactory", e);
