@@ -4,40 +4,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
         <title>Gerador de Números Aleatórios</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f0f8ff;
-                margin: 20px;
-            }
-            h2 {
-                color: #2c3e50;
-            }
-            p {
-                margin-bottom: 15px;
-            }
-            input[type="text"] {
-                padding: 5px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                width: 150px;
-            }
-            input[type="submit"], button {
-                background-color: #3498db;
-                color: white;
-                padding: 8px 16px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-            input[type="submit"]:hover, button:hover {
-                background-color: #2980b9;
-            }
-            .ui-message-error {
-                color: red;
-                font-weight: bold;
-            }
-        </style>
+        <h:outputStylesheet library="css" name="style.css" />
     </h:head>
     <h:body>
         <h:form>
