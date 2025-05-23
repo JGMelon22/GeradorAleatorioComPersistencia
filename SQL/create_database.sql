@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS random_number_db;
