@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Resultado</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f8ff;
+                margin: 20px;
+            }
+            h2 {
+                color: #2c3e50;
+            }
+            p {
+                font-size: 1.1em;
+                margin-bottom: 10px;
+            }
+            a {
+                display: inline-block;
+                margin-top: 20px;
+                text-decoration: none;
+                background-color: #3498db;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+            a:hover {
+                background-color: #2980b9;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>Número Aleatório Gerado</h2>
+
+            <p>Valor máximo: #{numeroAleatorioBean.maxValue}</p>
+            <p>Número gerado: #{numeroAleatorioBean.generatedNumber}</p>
+
+            <h:outputLink value="input.xhtml">Voltar</h:outputLink>
+        </h:form>
+    </h:body>
+</html>

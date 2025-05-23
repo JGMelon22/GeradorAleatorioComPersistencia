@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Gerador de Números Aleatórios</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f8ff;
+                margin: 20px;
+            }
+            h2 {
+                color: #2c3e50;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+            input[type="text"] {
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 150px;
+            }
+            input[type="submit"], button {
+                background-color: #3498db;
+                color: white;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover, button:hover {
+                background-color: #2980b9;
+            }
+            .ui-message-error {
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>Gerador de Números Aleatórios</h2>
+
+            <p>
+                <h:outputLabel for="maxValue" value="Valor máximo:" />
+                <h:inputText id="maxValue" value="#{numeroAleatorioBean.maxValue}" 
+                             required="true" requiredMessage="Por favor, informe um valor." />
+                <h:message for="maxValue" styleClass="ui-message-error" />
+            </p>
+
+            <p>
+                <h:commandButton value="Gerar" action="#{numeroAleatorioBean.generateRandomNumber}" />
+            </p>
+        </h:form>
+    </h:body>
+</html>
