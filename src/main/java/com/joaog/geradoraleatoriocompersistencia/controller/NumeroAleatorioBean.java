@@ -4,13 +4,13 @@ import com.joaog.geradoraleatoriocompersistencia.model.NumeroAleatorio;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Random;
-import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
-import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.servlet.http.HttpServletRequest;
 
-@Named
+@ManagedBean
 @SessionScoped
 public class NumeroAleatorioBean implements Serializable {
 
